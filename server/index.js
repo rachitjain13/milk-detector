@@ -30,7 +30,7 @@ function getPythonPath() {
     );
   }
 
-  return "python3";
+  return "/opt/venv/bin/python";
 }
 dotenv.config();
 
