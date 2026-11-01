@@ -40,7 +40,11 @@ const uploadDir = path.join(__dirname, "uploads");
 
 fs.mkdirSync(uploadDir, { recursive: true });
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || "http://localhost:5173"
+  })
+);
 app.use(express.json());
 
 // ---------- Python image analyzer ----------
@@ -417,20 +421,18 @@ async function startServer() {
     });
 
   } catch (error) {
-    console.error("Capture validation error:", error.message);
-    if (error.stderr) {
-      console.error("Python stderr:", error.stderr);
-    }
-    if (error.stdout) {
-      console.error("Python stdout:", error.stdout);
-    }
+  console.error("Backend startup failed:", error.message);
 
-    return res.status(500).json({
-      success: false,
-      valid: false,
-      message: "Could not validate this photo. Check the backend terminal for details."
-    });
+  if (error.stderr) {
+    console.error("Python stderr:", error.stderr);
   }
+
+  if (error.stdout) {
+    console.error("Python stdout:", error.stdout);
+  }
+
+  process.exit(1);
+}
 }
 
 startServer();
