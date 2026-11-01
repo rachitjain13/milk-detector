@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Python environment
+.venv/
+**/.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Uploaded files and temporary data
+server/uploads/
+uploads/
+temp/
+tmp/
+
+# Research and experimental outputs
+ai-engine/analysis_output/
+ai-engine/research_data/
+ai-engine/public_datasets/
+ai-engine/dataset/
+ai-engine/temp_camp*/
+ai-engine/**/__pycache__/
+
+# Local logs
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+# Additional Python environments
+.venv-deploy/
+**/.venv-deploy/
+
+# Frontend build files
+client/dist/
+client/build/
+
+# Framework build files
+.next/
+out/
+build/
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+ai-engine/calibration_output/
+ai-engine/unified_all_batches(1).csv
+ai-engine/v6_roi_features(1).csv
+
+ai-engine/calibration_output/
+ai-engine/unified_all_batches(1).csv
+ai-engine/v6_roi_features(1).csv

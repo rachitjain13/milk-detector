@@ -1,0 +1,92 @@
+{
+  "validation": {
+    "accuracy": 0.7691666666666667,
+    "confusion_matrix_labels_order": [
+      "adulterated",
+      "unadulterated"
+    ],
+    "confusion_matrix": [
+      [
+        472,
+        128
+      ],
+      [
+        149,
+        451
+      ]
+    ],
+    "classification_report": {
+      "adulterated": {
+        "precision": 0.7600644122383253,
+        "recall": 0.7866666666666666,
+        "f1-score": 0.7731367731367731,
+        "support": 600.0
+      },
+      "unadulterated": {
+        "precision": 0.7789291882556131,
+        "recall": 0.7516666666666667,
+        "f1-score": 0.7650551314673452,
+        "support": 600.0
+      },
+      "accuracy": 0.7691666666666667,
+      "macro avg": {
+        "precision": 0.7694968002469692,
+        "recall": 0.7691666666666667,
+        "f1-score": 0.7690959523020591,
+        "support": 1200.0
+      },
+      "weighted avg": {
+        "precision": 0.7694968002469692,
+        "recall": 0.7691666666666667,
+        "f1-score": 0.7690959523020592,
+        "support": 1200.0
+      }
+    },
+    "num_images": 1200
+  },
+  "test": {
+    "accuracy": 0.5691666666666667,
+    "confusion_matrix_labels_order": [
+      "adulterated",
+      "unadulterated"
+    ],
+    "confusion_matrix": [
+      [
+        234,
+        366
+      ],
+      [
+        151,
+        449
+      ]
+    ],
+    "classification_report": {
+      "adulterated": {
+        "precision": 0.6077922077922078,
+        "recall": 0.39,
+        "f1-score": 0.4751269035532995,
+        "support": 600.0
+      },
+      "unadulterated": {
+        "precision": 0.550920245398773,
+        "recall": 0.7483333333333333,
+        "f1-score": 0.6346289752650177,
+        "support": 600.0
+      },
+      "accuracy": 0.5691666666666667,
+      "macro avg": {
+        "precision": 0.5793562265954904,
+        "recall": 0.5691666666666666,
+        "f1-score": 0.5548779394091586,
+        "support": 1200.0
+      },
+      "weighted avg": {
+        "precision": 0.5793562265954904,
+        "recall": 0.5691666666666667,
+        "f1-score": 0.5548779394091586,
+        "support": 1200.0
+      }
+    },
+    "num_images": 1200
+  }
+}

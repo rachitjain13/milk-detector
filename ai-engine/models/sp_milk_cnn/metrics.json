@@ -1,0 +1,63 @@
+{
+  "test_accuracy": 0.7716666666666666,
+  "labels_order": [
+    "adulterated",
+    "unadulterated"
+  ],
+  "confusion_matrix": [
+    [
+      459,
+      141
+    ],
+    [
+      133,
+      467
+    ]
+  ],
+  "classification_report": {
+    "adulterated": {
+      "precision": 0.7753378378378378,
+      "recall": 0.765,
+      "f1-score": 0.7701342281879194,
+      "support": 600.0
+    },
+    "unadulterated": {
+      "precision": 0.7680921052631579,
+      "recall": 0.7783333333333333,
+      "f1-score": 0.7731788079470199,
+      "support": 600.0
+    },
+    "accuracy": 0.7716666666666666,
+    "macro avg": {
+      "precision": 0.7717149715504978,
+      "recall": 0.7716666666666667,
+      "f1-score": 0.7716565180674697,
+      "support": 1200.0
+    },
+    "weighted avg": {
+      "precision": 0.771714971550498,
+      "recall": 0.7716666666666666,
+      "f1-score": 0.7716565180674697,
+      "support": 1200.0
+    }
+  },
+  "test_images": 1200,
+  "image_size": [
+    128,
+    128
+  ],
+  "train_campaigns": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "validation_campaigns": [
+    7
+  ],
+  "test_campaigns": [
+    9
+  ]
+}
