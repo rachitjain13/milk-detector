@@ -1,0 +1,7 @@
+.git
+**/node_modules
+**/.venv
+**/.venv-deploy
+**/dist
+server/.env
+server/uploads/*
