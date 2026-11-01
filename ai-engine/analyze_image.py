@@ -136,18 +136,6 @@ def validate_capture(image_path):
 
     face_check = check_capture_image(image)
 
-    if face_check["face_detection_available"] is False:
-        return {
-            "valid": False,
-            "message": "Face detection is unavailable. Please try again later."
-        }
-
-    if face_check["face_detected"]:
-        return {
-            "valid": False,
-            "message": "A face was detected. Capture only the milk glass."
-        }
-
     return {
         "valid": True,
         "message": "Basic image checks passed.",
